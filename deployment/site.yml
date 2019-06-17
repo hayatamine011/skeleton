@@ -1,6 +1,6 @@
 ---
 - hosts: cloud
-  remote_user: clouduser
+  remote_user: a
   roles:
      - common
      - deploy

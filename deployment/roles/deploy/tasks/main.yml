@@ -3,7 +3,7 @@
 
 - name: Download skeleton runnable jar
   get_url:
-    url: http://nexus.company.com/artifact/maven/content?g=com.company.skeleton&a=backend&v=0.0.1-SNAPSHOT&r=snapshots
+    url: http://192.168.1.145:8081/artifact/maven/content?g=com.company.skeleton&a=backend&v=0.0.1-SNAPSHOT&r=snapshots
     dest: /opt/skeleton/skeleton.jar
     backup: yes
     force: yes

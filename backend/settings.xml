@@ -16,13 +16,4 @@
     </server>
   </servers>
 
-  <mirrors>
-    <mirror>
-      <id>central</id>
-      <name>central</name>
-      <url>http:///192.168.1.145:8081/repository/maven-group/</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-  </mirrors>
-
 </settings>

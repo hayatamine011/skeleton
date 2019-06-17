@@ -10,7 +10,7 @@ pipeline {
                 stage('Build Backend'){
                     steps {
                         dir('backend'){
-                            sh 'mvn clean install spotbugs:spotbugs checkstyle:checkstyle deploy'
+                            sh 'mvn --settings settings.xml clean install spotbugs:spotbugs checkstyle:checkstyle deploy'
                         }
                     }
                     post {

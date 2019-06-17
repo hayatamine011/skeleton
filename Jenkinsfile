@@ -24,8 +24,8 @@ pipeline {
                         }
                     }
                 }
-           // }
-        }
+            }
+       // }
         stage('Deploy to test'){
             steps {
                 dir('deployment'){

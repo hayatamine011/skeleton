@@ -18,9 +18,10 @@ pipeline {
                stage('Build Frontend'){
                     steps {
                         dir('frontend'){
-                            sh 'npm install --save'
-                            sh 'npm install jest-cli --save'
-                            sh 'mvn --settings settings.xml clean install'
+                            //sh 'npm install --save'
+                          //  sh 'npm install jest-cli --save'
+                           // sh 'mvn --settings settings.xml clean install'
+                            sh 'echo front'
                         }
                     }
                 }

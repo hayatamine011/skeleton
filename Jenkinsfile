@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage('Build') {
-            parallel {
+          //  parallel {
                 stage('Build Backend'){
                     steps {
                         dir('backend'){
@@ -24,7 +24,7 @@ pipeline {
                         }
                     }
                 }
-            }
+           // }
         }
         stage('Deploy to test'){
             steps {

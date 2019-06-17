@@ -24,7 +24,7 @@ pipeline {
                         }
                     }
                 }
-            }
+           // }
        // }
         stage('Deploy to test'){
             steps {

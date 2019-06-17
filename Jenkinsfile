@@ -6,8 +6,8 @@ pipeline {
     }
     stages {
         stage('Build') {
-          //  parallel {
-                stage('Build Backend'){
+         
+               // stage('Build Backend'){
                     steps {
                         dir('backend'){
                             sh 'mvn --settings settings.xml clean install spotbugs:spotbugs checkstyle:checkstyle deploy'
@@ -16,5 +16,5 @@ pipeline {
 
                 }
                
-}
+
     }

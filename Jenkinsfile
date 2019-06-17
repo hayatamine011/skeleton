@@ -6,16 +6,16 @@ pipeline {
     }
     stages {
         stage('Build') {
-          //  parallel {
-              //  stage('Build Backend'){
+           parallel {
+               stage('Build Backend'){
                     steps {
                         dir('backend'){
                             sh 'mvn --settings settings.xml clean install spotbugs:spotbugs checkstyle:checkstyle deploy'
                         }
                     }
 
-              //  }
-              //  stage('Build Frontend'){
+                }
+               stage('Build Frontend'){
                     steps {
                         dir('frontend'){
                             sh 'npm install --save'
@@ -24,8 +24,8 @@ pipeline {
                         }
                     }
                 }
-          //  }
-       // }
+           }
+        }
         stage('Deploy to test'){
             steps {
                 dir('deployment'){

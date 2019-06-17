@@ -20,7 +20,7 @@ pipeline {
                         dir('frontend'){
                             sh 'npm install --save'
                             sh 'npm install jest-cli --save'
-                            sh 'mvn clean install'
+                            sh 'mvn --settings settings.xml clean install'
                         }
                     }
                 }

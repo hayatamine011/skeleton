@@ -28,13 +28,16 @@
             <uniqueVersion>true</uniqueVersion>
             <id>Releases</id>
             <layout>default</layout>
-            <url>http://nexus.edudoo.com/</url>
+            <--!<url>http://nexus.edudoo.com/</url>-->
+                <url> http://192.168.1.145:8081</url>
         </repository>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
             <id>Snapshots</id>
             <layout>default</layout>
-            <url>http://nexus.edudoo.com/</url>
+            <--! <url>http://nexus.edudoo.com/</url>-->
+             <url>http://192.168.1.145:8081/</url>
+                  
         </snapshotRepository>
     </distributionManagement>
 

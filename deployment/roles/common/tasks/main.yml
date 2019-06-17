@@ -1,6 +1,6 @@
 - name: Set up multiple authorized keys
   authorized_key:
-    user: clouduser
+    user: a
     state: present
     key: '{{ item }}'
   with_file:

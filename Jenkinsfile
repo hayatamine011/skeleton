@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent { label 'cen' }
     tools {
         maven 'Maven 3.3.9'
         jdk 'jdk1.8.0'
